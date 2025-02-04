@@ -21,7 +21,7 @@
       </runner>
       <runner id="Maven2_1" name="Maven Build" type="Maven2">
         <conditions>
-          <equals name="teamcity.build.branch" value="master" />
+          <contains name="teamcity.build.branch" value="master" />
         </conditions>
         <parameters>
           <param name="goals" value="clean deploy" />
